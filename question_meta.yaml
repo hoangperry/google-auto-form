@@ -1,0 +1,236 @@
+url: https://docs.google.com/forms/d/e/1FAIpQLSdGhAv6YAjF34OxROVSp6nJLb0swvsp-8xOA3qQTzFEeGYEsA/viewform
+range: 2
+page:
+  "Hộ khẩu của bạn":
+    type: one
+    answer:
+      "Có hộ khẩu ở TP. HCM": 0.7
+      "Tạm trú ở TP. HCM": 0.3
+
+  "Giới tính":
+    type: one
+    answer:
+      "Nữ": 0.4
+      "Nam": 0.6
+
+  "Số lần mua sắm trực tuyến của bạn trong năm qua":
+    type: one
+    answer:
+      "Từ 1 đến 3 lần": 0.2
+      "Từ 3 đến 6 lần": 0.3
+      "Từ 7 đến 10 lần": 0.3
+      "Nhiều hơn 10 lần": 0.2
+
+  "Bạn đang ở:":
+    type: one
+    answer:
+      "Với người thân, gia đình": 0.3
+      "Với bạn bè": 0.6
+      "Một mình": 0.1
+
+  "Thời gian sử dụng Internet hằng ngày của bạn":
+    type: one
+    answer:
+      "Dưới 1h" : 0.2
+      "Từ 1h đến 3h": 0.3
+      "Từ 3h đến 5h": 0.4
+      "Trên 5h": 0.1
+
+  "Xin cho biết chi tiêu hàng tháng của bạn":
+    type: one
+    answer:
+      "Dưới 1 triệu": 0.05
+      "Từ 1 đến 2 triệu": 0.1
+      "Từ 2 đến 3 triệu": 0.15
+      "Từ 3 đến 5 triệu": 0.5
+      "Trên 5 triệu": 0.2
+
+  "Mức giá bạn sẵn sàng chấp nhận để mua trực tuyến là bao nhiêu?":
+    type: one
+    answer:
+      "Dưới 100.000 vnd": 0.15
+      "Từ 100.000 đến 500.000 vnd": 0.25
+      "Từ 500.000 đến 1.000.000 vnd": 0.4
+      "Trên 1.000.000 vnd": 0.2
+
+  "Các sản phẩm bạn thường mua sắm trực tuyến:":
+    type: many
+    answer:
+      "Quần áo, giầy dép, các phụ kiện thời trang": 0.3
+      "Hàng điện tử, linh kiện điện tử các loại": 0.6
+      "Các phiếu giảm giá (coupon)": 0.3
+      "Sách các loại": 0.9
+      "Các sản phẩm handmade, quà tặng": 0.5
+
+  "Bạn thường mua sắm trực tuyến ở các trang web:":
+    type: many
+    answer:
+      "Các trang mạng xã hội (Facebook, Zing me, Twitter,...)": 0.6
+      "Các diễn đàn ( 5giay.vn, muare.vn, tinhte.vn, vn-zoom.vn,...)": 0.3
+      "Các sàn giao dịch thương mại điện tử ( shopee.vn, lazada.vn, sendo.vn, ebay.vn,...)": 0.88
+      "Các trang mua theo nhóm ( muachung, nhommua, cungmua, hotdeal,...)": 0.31
+      "Trang web của các nhà bán lẽ ( dienmay.com, nguyenkim.vn, hoanlong.com,...)": 0.46
+
+  "Tôi không cần phải rời khỏi nhà để mua sắm":
+    type: range
+    answer:
+      7:  0.7
+
+  "Tôi không tốn thời gian đi lại và tham quan cửa hàng":
+    type: range
+    answer:
+      7:  0.53
+
+  "Tôi không tốn nhiều thời gian để tìm được sản phẩm mình cần":
+    type: range
+    answer:
+      7:  0.347
+
+  "Tôi có thể mua sắm mọi lúc":
+    type: range
+    answer:
+      7:  0.61
+
+  "Tôi có thể thoải mái lựa chọn sản phẩm mà không cảm thấy ngại":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi không bị nhân viên cửa hàng làm phiền":
+    type: range
+    answer:
+      7:  0.56
+
+  "Không cảm thấy ngại khi không quyết định mua":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi có thể tìm thấy hầu như tất cả những mặt hàng":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi có thể có được những thông tin đầy đủ về sản phẩm":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi có nhiều sự lựa chọn hơn cho 1 loại sản phẩm":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi có nhiều sự lựa chọn hơn về thương hiệu và người bán":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi cảm thấy tin tưởng vào loại hình mua sắm trực tuyến":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi cảm thấy tin tưởng vào những người bán trên mạng":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi cảm thấy tin tưởng vào hình thức thanh toán trực tuyến":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi cảm thấy tin tưởng vào hình thức thanh toán truyền thống":
+    type: range
+    answer:
+      7:  0.56
+
+  "Mức giá khi mua sắm trực tuyến rẻ hơn mua trực tiếp":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường so sánh giá của sản phẩm khi mua trực tuyến":
+    type: range
+    answer:
+      7:  0.56
+
+  "Sau khi so sánh, tôi thường chọn những người bán có mức giá thấp nhất":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường hỏi ý kiến bạn bè trước khi mua hàng trực tuyến":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường hỏi ý kiến gia đình trước khi mua hàng trực tuyến":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường tham khảo các ý kiến, đánh giá, bình luận trên mạng của người mua trước":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường tìm kiếm thông tin về thông tin người bán trên các công cụ tìm kiếm ( google, yahoo, bing, ...)":
+    type: range
+    answer: 0.56
+
+  "Tôi thường chọn mua trên những trang web có nhiều người sử dụng":
+    type: range
+    answer:
+      7: 0.56
+
+  "Tôi thường chọn mua trên những trang web có đầy đủ thông tin về người bán":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường chọn mua trên những trang web cung cấp đầy đủ thông tin về sản phẩm":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường chọn mua ở những trang web có giao diện đẹp, dễ nhìn":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường chọn mua ở những trang web có hệ thống ghi nhận những đánh giá, bình luận của người mua trước.":
+    type: range
+    answer:
+      7:  0.56
+
+  "Tôi thường chọn mua trên những trang web mà người bán là những nhà bán lẽ, công ty lớn. ( thegioididong, nguyenkim, hoanlong, nhommua, muachung)":
+    type: range
+    answer:
+      7:  0.56
+
+  "Vui lòng cho biết mức độ hài lòng của bạn đối với hình thức mua sắm trực tuyến so với mua sắm truyền thống":
+    type: range
+    answer:
+      7:  0.56
+
+  "Bạn có ý định sẽ tiếp tục mua sắm trực tuyến hay không?":
+    type: range
+    answer:
+      7:  0.56
+
+  "Bạn có thích giới thiệu những sản phẩm được bán trực tuyến cho bạn bè hay không?":
+    type: range
+    answer:
+      7:  0.56
+
+  "Xếp hạng các yếu tố":
+    type: rank
+    answer:
+      7:
+        - "Giá cả": 0.5
+        - "Chủng loại sản phẩm đa dạng": 0.5
+        - "Chất lượng sản phẩm đảm bảo": 0.5
+        - "Uy tín của người bán": 0.5
+        - "Tính tiện lợi": 0.5

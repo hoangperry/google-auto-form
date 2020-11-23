@@ -137,16 +137,18 @@ class WebDriver:
                                     break
                         elif meta_qu['type'] == 'many':
                             ans_list = block.find_elements_by_css_selector(
-                                'div.freebirdFormviewerViewItemsCheckboxOptionContainer'
+                                'div.freebirdFormviewerComponentsQuestionCheckboxChoice'
                             )
                             for ans in ans_list:
+                                while len(answer_choice) == 0:
+                                    answer_choice = random_ans(meta_qu)
                                 if ans.text.strip() in answer_choice:
                                     ans.find_element_by_css_selector(
                                         'div.appsMaterialWizTogglePapercheckboxCheckbox'
                                     ).click()
 
                         elif meta_qu['type'] == 'range':
-                            ans_range = random.randint(0, 6)
+                            ans_range = random.randint(0, int(list(meta_qu['answer'].keys())[0]) - 1)
                             list_ans = block.find_elements_by_css_selector('label.freebirdMaterialScalecontentColumn')
                             list_ans[ans_range].click()
 

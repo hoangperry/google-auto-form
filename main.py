@@ -8,6 +8,6 @@ if __name__ == '__main__':
     options = Options()
     options.add_argument('--dns-prefetch-disable')
     options.headless = False
-    ques = yaml.safe_load(open('question_meta.yaml', encoding='utf-8'))
+    ques = yaml.safe_load(open('nhumai.yaml', encoding='utf-8'))
     form = WebDriver(ques, executable_path=os.getcwd() + '/chromedriver', options=options)
     form.run(100)

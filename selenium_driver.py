@@ -61,7 +61,7 @@ def write_to_file(filename, obj_to_write):
 
 
 class WebDriver:
-    def __init__(self, meta_question, executable_path=None, options=None, timeout=15, wait=15):
+    def __init__(self, meta_question, executable_path=None, options=None, timeout=5, wait=0.3):
 
         if options is not None:
             self.driver = webdriver.Chrome(executable_path=executable_path, chrome_options=options)
@@ -115,7 +115,7 @@ class WebDriver:
                         continue
                     try:
                         title_block = block.find_element_by_css_selector(
-                            'div.freebirdFormviewerViewItemsItemItemTitle'
+                            'div.freebirdFormviewerComponentsQuestionBaseTitle.exportItemTitle.freebirdCustomFont'
                         ).text.split('\n')[0].replace('*', '').strip()
                     except:
                         continue
@@ -127,12 +127,12 @@ class WebDriver:
 
                         if meta_qu['type'] == 'one':
                             ans_list = block.find_elements_by_css_selector(
-                                'div.freebirdFormviewerViewItemsRadioOptionContainer'
+                                'div.docssharedWizToggleLabeledLabelWrapper.exportLabelWrapper'
                             )
                             for ans in ans_list:
                                 if ans.text.strip() == answer_choice:
                                     ans.find_element_by_css_selector(
-                                        'div.appsMaterialWizToggleRadiogroupElContainer'
+                                        'div.appsMaterialWizToggleRadiogroupElContainer.exportContainerEl.docssharedWizToggleLabeledControl.freebirdThemedRadio.freebirdThemedRadioDarkerDisabled'
                                     ).click()
                                     break
                         elif meta_qu['type'] == 'many':
@@ -162,9 +162,9 @@ class WebDriver:
                                 list_ans[ans_range].click()
 
                 if page < self.meta_question['range'] - 1:
-                    self.driver.find_element_by_css_selector(
+                    self.driver.find_elements_by_css_selector(
                         'div.freebirdFormviewerViewNavigationNoSubmitButton'
-                    ).click()
+                    )[-1].click()
                 else:
                     self.driver.find_element_by_css_selector('div.freebirdThemedFilledButtonM2').click()
                     print(f'finish {self.total}')
